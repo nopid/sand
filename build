@@ -1,0 +1,4 @@
+#!/bin/sh
+TARGET=wasm32-unknown-emscripten
+cargo build --release --target $TARGET
+cp target/$TARGET/release/sand.* web/

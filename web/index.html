@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>SAND</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<script type="text/javascript" src="pyxel.js"></script>
+<script type="text/javascript">
+var Module = {} 
+async function blop() {
+  console.log("Hello Pyxel");
+  _allowGamepadConnection();
+  _suppressPinchOperations();
+  let canvas = await _createScreenElements();
+  Module.canvas = canvas;
+  await _waitForInput();
+  await _loadScript("sand.js");
+ }
+blop();
+</script>
+</body>
+</html>
