@@ -8,6 +8,10 @@ Keyboard map:
  - Z: erase all sand
  - LEFT/RIGHT: modify update speed
 
+## Building
+
+Just use `cargo run` to run locally.
+
 
 ## References
  1. https://en.wikipedia.org/wiki/Abelian_sandpile_model
